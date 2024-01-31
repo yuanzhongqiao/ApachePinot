@@ -22,75 +22,111 @@
     
 <img src="https://imgur.com/GNevDZ0.png" align="center" alt="Apache Pinot"/>
 
----------------------------------------
-[![Build Status](https://github.com/apache/pinot/actions/workflows/pinot_tests.yml/badge.svg?event=push)](https://github.com/apache/pinot/actions/workflows/pinot_tests.yml)
-[![Release](https://img.shields.io/github/release/apache/pinot/all.svg)](https://pinot.apache.org/download/)
-[![codecov.io](https://codecov.io/github/apache/pinot/branch/master/graph/badge.svg)](https://codecov.io/github/apache/pinot)
-[![Join the chat at https://communityinviter.com/apps/apache-pinot/apache-pinot](https://img.shields.io/badge/slack-apache--pinot-brightgreen?logo=slack)](https://communityinviter.com/apps/apache-pinot/apache-pinot)
-[![Twitter Follow](https://img.shields.io/twitter/follow/apachepinot.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=apachepinot)
-[![License](https://img.shields.io/github/license/apache/pinot.svg)](LICENSE)
-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text">
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/745f9277df8d52e5e73539d959e20cead824e75a1714de5c2bf756bfd71559a8/68747470733a2f2f696d6775722e636f6d2f474e6576445a302e706e67"><img src="https://camo.githubusercontent.com/745f9277df8d52e5e73539d959e20cead824e75a1714de5c2bf756bfd71559a8/68747470733a2f2f696d6775722e636f6d2f474e6576445a302e706e67" align="center" alt="阿帕奇黑皮诺" data-canonical-src="https://imgur.com/GNevDZ0.png" style="max-width: 100%;"></a>
+<hr>
+<p dir="auto"><a href="https://github.com/apache/pinot/actions/workflows/pinot_tests.yml"><img src="https://github.com/apache/pinot/actions/workflows/pinot_tests.yml/badge.svg?event=push" alt="构建状态" style="max-width: 100%;"></a>
+<a href="https://pinot.apache.org/download/" rel="nofollow"><img src="https://camo.githubusercontent.com/6abaf2c70a28c45ccc1d91da7ce32d65277f4959a2daf3fa2d1beaa6aa0e35bc/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f6170616368652f70696e6f742f616c6c2e737667" alt="发布" data-canonical-src="https://img.shields.io/github/release/apache/pinot/all.svg" style="max-width: 100%;"></a>
+<a href="https://codecov.io/github/apache/pinot" rel="nofollow"><img src="https://camo.githubusercontent.com/73b241337495745fa52af10eacf3ecc5b9755d64eb8434a85790d928f07e8518/68747470733a2f2f636f6465636f762e696f2f6769746875622f6170616368652f70696e6f742f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="Codecov.io" data-canonical-src="https://codecov.io/github/apache/pinot/branch/master/graph/badge.svg" style="max-width: 100%;"></a>
+<a href="https://communityinviter.com/apps/apache-pinot/apache-pinot" rel="nofollow"><img src="https://camo.githubusercontent.com/7fbb6d95a3062a56fce8096484eca9a58cac93d2112e3993f41558af6a9f7603/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d6170616368652d2d70696e6f742d627269676874677265656e3f6c6f676f3d736c61636b" alt="加入聊天：https://communityinviter.com/apps/apache-pinot/apache-pinot" data-canonical-src="https://img.shields.io/badge/slack-apache--pinot-brightgreen?logo=slack" style="max-width: 100%;"></a>
+<a href="https://twitter.com/intent/follow?screen_name=apachepinot" rel="nofollow"><img src="https://camo.githubusercontent.com/7b1ee2ceb7d085103838c82571217e30891c8f7b3a414839452de6b417bc2275/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f61706163686570696e6f742e7376673f6c6162656c3d466f6c6c6f77267374796c653d736f6369616c" alt="推特关注" data-canonical-src="https://img.shields.io/twitter/follow/apachepinot.svg?label=Follow&amp;style=social" style="max-width: 100%;"></a>
+<a href="/apache/pinot/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/a95c58f0e66d903be630ac00ecd7486b1def722beede61ec65835f0e3c40132a/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6170616368652f70696e6f742e737667" alt="执照" data-canonical-src="https://img.shields.io/github/license/apache/pinot.svg" style="max-width: 100%;"></a></p>
 </div>
-
-- [What is Apache Pinot?](#what-is-apache-pinot)
-- [Features](#features)
-- [When should I use Pinot?](#when-should-i-use-pinot)
-- [Building Pinot](#building-pinot)
-- [Deploying Pinot to Kubernetes](#deploying-pinot-to-kubernetes)
-- [Join the Community](#join-the-community)
-- [Documentation](#documentation)
-- [License](#license)
-
-# What is Apache Pinot?
-
-[Apache Pinot](https://pinot.apache.org) is a real-time distributed OLAP datastore, built to deliver scalable real-time analytics with low latency. It can ingest from batch data sources (such as Hadoop HDFS, Amazon S3, Azure ADLS, Google Cloud Storage) as well as stream data sources (such as Apache Kafka).
-
-Pinot was built by engineers at LinkedIn and Uber and is designed to scale up and out with no upper bound. Performance always remains constant based on the size of your cluster and an expected query per second (QPS) threshold.
-
-For getting started guides, deployment recipes, tutorials, and more, please visit our project documentation at [https://docs.pinot.apache.org](https://docs.pinot.apache.org).
-
-<img src="https://gblobscdn.gitbook.com/assets%2F-LtH6nl58DdnZnelPdTc%2F-M69C48fK2BhCoou1REr%2F-M69DbDfcATcZOAgyX7k%2Fpinot-overview-graphic.png?alt=media&token=3552722e-8d1d-4397-972e-a81917ced182" align="center" alt="Apache Pinot"/>
-
-## Features
-
-Pinot was originally built at LinkedIn to power rich interactive real-time analytic applications such as [Who Viewed Profile](https://www.linkedin.com/me/profile-views/urn:li:wvmp:summary/),  [Company Analytics](https://www.linkedin.com/company/linkedin/insights/),  [Talent Insights](https://business.linkedin.com/talent-solutions/talent-insights), and many more. [UberEats Restaurant Manager](https://eng.uber.com/restaurant-manager/) is another example of a customer facing Analytics App. At LinkedIn, Pinot powers 50+ user-facing products, ingesting millions of events per second and serving 100k+ queries per second at millisecond latency.
-
-* **Column-oriented**: a column-oriented database with various compression schemes such as Run Length, Fixed Bit Length.
-
-* [**Pluggable indexing**](https://docs.pinot.apache.org/basics/indexing): pluggable indexing technologies Sorted Index, Bitmap Index, Inverted Index.
-
-* **Query optimization**: ability to optimize query/execution plan based on query and segment metadata.
-
-* **Stream and batch ingest**: near real time ingestion from streams and batch ingestion from Hadoop.
-
-* **Query:** SQL based query execution engine.
-
-* **Upsert during real-time ingestion**: update the data at-scale with consistency
-
-* **Multi-valued fields:** support for multi-valued fields, allowing you to query fields as comma separated values.
-
-* **Cloud-native on Kubernetes**: Helm chart provides a horizontally scalable and fault-tolerant clustered deployment that is easy to manage using Kubernetes.
-
-<a href="https://docs.pinot.apache.org/basics/getting-started"><img src="https://gblobscdn.gitbook.com/assets%2F-LtH6nl58DdnZnelPdTc%2F-MKaPf2qveUt5cg0dMbM%2F-MKaPmS1fuBs2CHnx9-Z%2Fpinot-ui-width-1000.gif?alt=media&token=53e4c5a8-a9cd-4610-a338-d54ea036c090" align="center" alt="Apache Pinot query console"/></a>
-
-## When should I use Pinot?
-
-Pinot is designed to execute real-time OLAP queries with low latency on massive amounts of data and events. In addition to real-time stream ingestion, Pinot also supports batch use cases with the same low latency guarantees. It is suited in contexts where fast analytics, such as aggregations, are needed on immutable data, possibly, with real-time data ingestion. Pinot works very well for querying time series data with lots of dimensions and metrics.
-
-Example query:
-```SQL
-SELECT sum(clicks), sum(impressions) FROM AdAnalyticsTable
+<ul dir="auto">
+<li><a href="#what-is-apache-pinot"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是阿帕奇皮诺？</font></font></a></li>
+<li><a href="#features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></a></li>
+<li><a href="#when-should-i-use-pinot"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我什么时候应该使用黑皮诺？</font></font></a></li>
+<li><a href="#building-pinot"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑黑皮诺</font></font></a></li>
+<li><a href="#deploying-pinot-to-kubernetes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Pinot 部署到 Kubernetes</font></font></a></li>
+<li><a href="#join-the-community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入社区</font></font></a></li>
+<li><a href="#documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+<li><a href="#license"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></a></li>
+</ul>
+<h1 tabindex="-1" dir="auto"><a id="user-content-what-is-apache-pinot" class="anchor" aria-hidden="true" tabindex="-1" href="#what-is-apache-pinot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是阿帕奇皮诺？</font></font></h1>
+<p dir="auto"><a href="https://pinot.apache.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Pinot</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一种实时分布式 OLAP 数据存储，旨在提供低延迟的可扩展实时分析。</font><font style="vertical-align: inherit;">它可以从批处理数据源（例如 Hadoop HDFS、Amazon S3、Azure ADLS、Google Cloud Storage）以及流数据源（例如 Apache Kafka）中摄取。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pinot 由 LinkedIn 和 Uber 的工程师构建，旨在无上限地扩展和扩展。</font><font style="vertical-align: inherit;">根据集群的大小和预期的每秒查询次数 (QPS) 阈值，性能始终保持不变。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关入门指南、部署方法、教程等，请访问我们的项目文档：</font></font><a href="https://docs.pinot.apache.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://docs.pinot.apache.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6d522e561389e5f5bdedc0d32a41b7d76b533f336e6f6292fa19d4e1718172a3/68747470733a2f2f67626c6f627363646e2e676974626f6f6b2e636f6d2f6173736574732532462d4c7448366e6c353844646e5a6e656c506454632532462d4d3639433438664b324268436f6f75315245722532462d4d363944624466634154635a4f41677958376b25324670696e6f742d6f766572766965772d677261706869632e706e673f616c743d6d6564696126746f6b656e3d33353532373232652d386431642d343339372d393732652d613831393137636564313832"><img src="https://camo.githubusercontent.com/6d522e561389e5f5bdedc0d32a41b7d76b533f336e6f6292fa19d4e1718172a3/68747470733a2f2f67626c6f627363646e2e676974626f6f6b2e636f6d2f6173736574732532462d4c7448366e6c353844646e5a6e656c506454632532462d4d3639433438664b324268436f6f75315245722532462d4d363944624466634154635a4f41677958376b25324670696e6f742d6f766572766965772d677261706869632e706e673f616c743d6d6564696126746f6b656e3d33353532373232652d386431642d343339372d393732652d613831393137636564313832" align="center" alt="阿帕奇黑皮诺" data-canonical-src="https://gblobscdn.gitbook.com/assets%2F-LtH6nl58DdnZnelPdTc%2F-M69C48fK2BhCoou1REr%2F-M69DbDfcATcZOAgyX7k%2Fpinot-overview-graphic.png?alt=media&amp;token=3552722e-8d1d-4397-972e-a81917ced182" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-features" class="anchor" aria-hidden="true" tabindex="-1" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pinot 最初是在 LinkedIn 构建的，旨在为丰富的交互式实时分析应用程序提供支持，例如“</font></font><a href="https://www.linkedin.com/me/profile-views/urn:li:wvmp:summary/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">谁查看了个人资料”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、   </font></font><a href="https://www.linkedin.com/company/linkedin/insights/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“公司分析”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、   </font></font><a href="https://business.linkedin.com/talent-solutions/talent-insights" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“人才洞察”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等等。</font></font><a href="https://eng.uber.com/restaurant-manager/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UberEats Restaurant Manager</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是面向客户的分析应用程序的另一个示例。</font><font style="vertical-align: inherit;">在 LinkedIn，Pinot 为 50 多个面向用户的产品提供支持，每秒摄取数百万个事件，并以毫秒延迟每秒处理 10 万多个查询。</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">面向列</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：面向列的数据库，具有各种压缩方案，例如游程长度、固定位长度。</font></font></p>
+</li>
+<li>
+<p dir="auto"><a href="https://docs.pinot.apache.org/basics/indexing" rel="nofollow"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可插入索引</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：可插入索引技术排序索引、位图索引、倒排索引。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查询优化</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：能够根据查询和分段元数据优化查询/执行计划。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">流和批量摄取</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：从流中进行近实时摄取，并从 Hadoop 进行批量摄取。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查询：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 SQL 的查询执行引擎。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实时摄取期间更新插入</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：大规模更新数据并保持一致性</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多值字段：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持多值字段，允许您以逗号分隔值查询字段。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kubernetes 上的云原生</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：Helm Chart 提供了水平可扩展且容错的集群部署，易于使用 Kubernetes 进行管理。</font></font></p>
+</li>
+</ul>
+<p dir="auto"><animated-image data-catalyst=""><a href="https://docs.pinot.apache.org/basics/getting-started" rel="nofollow" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/f5430dc1cfec8129d345b95f97bfc29869b7fce338b24a9928b4db5914f241fe/68747470733a2f2f67626c6f627363646e2e676974626f6f6b2e636f6d2f6173736574732532462d4c7448366e6c353844646e5a6e656c506454632532462d4d4b61506632717665557435636730644d624d2532462d4d4b61506d5331667542733243486e78392d5a25324670696e6f742d75692d77696474682d313030302e6769663f616c743d6d6564696126746f6b656e3d35336534633561382d613963642d343631302d613333382d643534656130333663303930" align="center" alt="Apache Pinot 查询控制台" data-canonical-src="https://gblobscdn.gitbook.com/assets%2F-LtH6nl58DdnZnelPdTc%2F-MKaPf2qveUt5cg0dMbM%2F-MKaPmS1fuBs2CHnx9-Z%2Fpinot-ui-width-1000.gif?alt=media&amp;token=53e4c5a8-a9cd-4610-a338-d54ea036c090" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://docs.pinot.apache.org/basics/getting-started" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="Apache Pinot query console" class="AnimatedImagePlayer-animatedImage" src="https://camo.githubusercontent.com/f5430dc1cfec8129d345b95f97bfc29869b7fce338b24a9928b4db5914f241fe/68747470733a2f2f67626c6f627363646e2e676974626f6f6b2e636f6d2f6173736574732532462d4c7448366e6c353844646e5a6e656c506454632532462d4d4b61506632717665557435636730644d624d2532462d4d4b61506d5331667542733243486e78392d5a25324670696e6f742d75692d77696474682d313030302e6769663f616c743d6d6564696126746f6b656e3d35336534633561382d613963642d343631302d613333382d643534656130333663303930" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="520"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play Apache Pinot query console" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play Apache Pinot query console">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="Open Apache Pinot query console in new window" class="AnimatedImagePlayer-button" href="https://docs.pinot.apache.org/basics/getting-started" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-when-should-i-use-pinot" class="anchor" aria-hidden="true" tabindex="-1" href="#when-should-i-use-pinot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我什么时候应该使用黑皮诺？</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pinot 旨在对大量数据和事件执行低延迟的实时 OLAP 查询。</font><font style="vertical-align: inherit;">除了实时流摄取之外，Pinot 还支持具有相同低延迟保证的批量用例。</font><font style="vertical-align: inherit;">它适用于需要对不可变数据进行快速分析（例如聚合）的环境，可能还需要实时数据摄取。</font><font style="vertical-align: inherit;">Pinot 非常适合查询具有大量维度和指标的时间序列数据。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查询示例：</font></font></p>
+<div class="highlight highlight-source-sql notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">SELECT</span> <span class="pl-c1">sum</span>(clicks), <span class="pl-c1">sum</span>(impressions) <span class="pl-k">FROM</span> AdAnalyticsTable
+  <span class="pl-k">WHERE</span>
+       ((daysSinceEpoch <span class="pl-k">&gt;=</span> <span class="pl-c1">17849</span> <span class="pl-k">AND</span> daysSinceEpoch <span class="pl-k">&lt;=</span> <span class="pl-c1">17856</span>)) <span class="pl-k">AND</span>
+       accountId <span class="pl-k">IN</span> (<span class="pl-c1">123456789</span>)
+  <span class="pl-k">GROUP BY</span>
+       daysSinceEpoch TOP <span class="pl-c1">100</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="SELECT sum(clicks), sum(impressions) FROM AdAnalyticsTable
   WHERE
        ((daysSinceEpoch >= 17849 AND daysSinceEpoch <= 17856)) AND
        accountId IN (123456789)
   GROUP BY
-       daysSinceEpoch TOP 100
-```
-
-## Building Pinot
-More detailed instructions can be found at [Quick Demo](https://docs.pinot.apache.org/basics/getting-started/quick-start) section in the documentation.
-```
-# Clone a repo
+       daysSinceEpoch TOP 100" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h2 tabindex="-1" dir="auto"><a id="user-content-building-pinot" class="anchor" aria-hidden="true" tabindex="-1" href="#building-pinot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑黑皮诺</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更详细的说明可以在文档中的</font></font><a href="https://docs.pinot.apache.org/basics/getting-started/quick-start" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速演示</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分找到。</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code># Clone a repo
 $ git clone https://github.com/apache/pinot.git
 $ cd pinot
 
@@ -100,25 +136,44 @@ $ mvn clean install -DskipTests -Pbin-dist
 # Run the Quick Demo
 $ cd build/
 $ bin/quick-start-batch.sh
-```
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# Clone a repo
+$ git clone https://github.com/apache/pinot.git
+$ cd pinot
 
-## Deploying Pinot to Kubernetes
-Please refer to [Running Pinot on Kubernetes](https://docs.pinot.apache.org/basics/getting-started/kubernetes-quickstart) in our project documentation. Pinot also provides Kubernetes integrations with the interactive query engine, [Trino](https://docs.pinot.apache.org/integrations/trino) [Presto](https://docs.pinot.apache.org/integrations/presto), and the data visualization tool, [Apache Superset](kubernetes/helm/superset.yaml).
+# Build Pinot
+$ mvn clean install -DskipTests -Pbin-dist
 
-## Join the Community
- - Ask questions on [Apache Pinot Slack](https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw)
- - Please join Apache Pinot mailing lists  
-   dev-subscribe@pinot.apache.org (subscribe to pinot-dev mailing list)  
-   dev@pinot.apache.org (posting to pinot-dev mailing list)  
-   users-subscribe@pinot.apache.org (subscribe to pinot-user mailing list)  
-   users@pinot.apache.org (posting to pinot-user mailing list)
- - Apache Pinot Meetup Group: https://www.meetup.com/apache-pinot/
-
-## Documentation
-Check out [Pinot documentation](https://docs.pinot.apache.org/) for a complete description of Pinot's features.
-- [Quick Demo](https://docs.pinot.apache.org/getting-started/running-pinot-locally)
-- [Pinot Architecture](https://docs.pinot.apache.org/basics/architecture)
-- [Pinot Query Language](https://docs.pinot.apache.org/users/user-guide-query/pinot-query-language)
-
-## License
-Apache Pinot is under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+# Run the Quick Demo
+$ cd build/
+$ bin/quick-start-batch.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h2 tabindex="-1" dir="auto"><a id="user-content-deploying-pinot-to-kubernetes" class="anchor" aria-hidden="true" tabindex="-1" href="#deploying-pinot-to-kubernetes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Pinot 部署到 Kubernetes</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅我们的项目文档中的</font></font><a href="https://docs.pinot.apache.org/basics/getting-started/kubernetes-quickstart" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Kubernetes 上运行 Pinot</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">Pinot 还提供 Kubernetes 与交互式查询引擎</font></font><a href="https://docs.pinot.apache.org/integrations/trino" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trino </font></font></a> <a href="https://docs.pinot.apache.org/integrations/presto" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Presto</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和数据可视化工具</font></font><a href="/apache/pinot/blob/master/kubernetes/helm/superset.yaml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Superset 的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集成。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-join-the-community" class="anchor" aria-hidden="true" tabindex="-1" href="#join-the-community"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入社区</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">询问有关</font></font><a href="https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Pinot Slack的问题</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请加入 Apache Pinot 邮件列表</font></font><br>
+<a href="mailto:dev-subscribe@pinot.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dev-subscribe@pinot.apache.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（订阅 pinot-dev 邮件列表）</font></font><br>
+<a href="mailto:dev@pinot.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dev@pinot.apache.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（发布到 pinot-dev 邮件列表）</font></font><br>
+<a href="mailto:users-subscribe@pinot.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">users-subscribe@pinot.apache.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（订阅 pinot-user 邮件列表) </font></font><br>
+<a href="mailto:users@pinot.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">users@pinot.apache.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（发布到 pinot-user 邮件列表）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Pinot 聚会小组：</font></font><a href="https://www.meetup.com/apache-pinot/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.meetup.com/apache-pinot/</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-documentation" class="anchor" aria-hidden="true" tabindex="-1" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font><a href="https://docs.pinot.apache.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pinot 文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取 Pinot 功能的完整描述。</font></font></p>
+<ul dir="auto">
+<li><a href="https://docs.pinot.apache.org/getting-started/running-pinot-locally" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速演示</font></font></a></li>
+<li><a href="https://docs.pinot.apache.org/basics/architecture" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">皮诺架构</font></font></a></li>
+<li><a href="https://docs.pinot.apache.org/users/user-guide-query/pinot-query-language" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">皮诺查询语言</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" tabindex="-1" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Pinot 遵循</font></font><a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache 许可证，版本 2.0</font></font></a></p>
+</article></div>
